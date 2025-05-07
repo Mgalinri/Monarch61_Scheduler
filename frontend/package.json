@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.21.0",
+    "@nuxtjs/ngrok": "^3.0.1",
+    "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.21.2",
+    "fuse.js": "^7.1.0",
+    "multer": "^1.4.5-lts.1",
+    "nuxt": "^3.14.1592",
+    "pinia": "^2.3.0",
+    "sharp": "^0.33.5",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "autoprefixer": "^10.4.20",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vitest": "^3.0.8"
+  }
+}

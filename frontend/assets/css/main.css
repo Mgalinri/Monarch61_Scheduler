@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "@nuxt/ui"; */
+
+
+body {
+    font-family: 'Instrument Sans', sans-serif;
+}
+.small-circle {
+    /* display: absolute !important; */
+    margin-top: -8px;
+    /* margin-right: -3px;  */
+}
+
+.gradient-red-orange {
+    background: linear-gradient(to right, #af2253, #de601d);
+}
+
+.carousel{
+    display: block !important;
+    justify-content: center !important; /* Center horizontally */
+    align-items: center !important;
+}
+.inside-carousel{
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important; /* Center horizontally */
+    align-items: center !important;
+}
+
+.card{
+    /* background-color: #1e90ff; */
+}
+
+.v-slick-carousel .next {
+    right: 10% !important;
+    background-color: black !important;
+    content: none !important;
+}
+.v-slick-carousel .prev {
+    left: 10% !important; /* Adjust position of the 'next' arrow */
+    z-index: 100 !important;
+    color: black !important;
+    background-color: black !important;
+}
+.v-slick-carousel .prev::after {
+    left: 10% !important; /* Adjust position of the 'next' arrow */
+    z-index: 100 !important;
+    color: black !important;
+    background-color: black !important;
+}
+
+
+/* Fade Transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-in-enter-active {
+  transition: opacity 0.4s ease-in-out;
+}
+.fade-in-enter-from {
+  opacity: 0;
+}
+.fade-in-leave-active {
+  transition: none; /* No fade-out effect for buttons */
+}
+
+.custom-prev,
+.custom-next {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ff4500; /* Change arrow color */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+
+.custom-prev {
+  left: -30px; /* Adjust position */
+}
+
+.custom-next {
+  right: -30px; /* Adjust position */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  color: #1e90ff; /* Hover color */
+}
