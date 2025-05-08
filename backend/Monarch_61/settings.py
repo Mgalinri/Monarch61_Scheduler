@@ -15,7 +15,7 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
 # Python imports
-
+import os
 from pathlib import Path
 from datetime import timedelta
 
@@ -23,12 +23,14 @@ from datetime import timedelta
 # Third-party imports
 import environ
 
-env = environ.Env()
-environ.Env.read_env('.env')
+
 
 
 # Base Directory
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 
@@ -179,6 +181,8 @@ EMAIL_USE_SSL = False
 
 # Unfold Configuration
 UNFOLD = {
+    "SITE_TITLE": "Monarch Scheduler Admin Site",
+     "SITE_HEADER": "Monarch Scheduler Admin Site",
     "DASHBOARD_CALLBACK": "api.views.views_dashboard.dashboard_callback",
     "SIDEBAR": {
         "show_search": False,
