@@ -1,5 +1,5 @@
 # Monarch 61 Scheduling System
-The following project was designed for Monarch 61, it`s main objective is to improve the event scheduling system. It contains a modern calendar, as well as a list view that provides the memnbers with a better user-experience.
+Monarch 61 scheduling system was designed for a non-profit in the Van Buren area, it's main objective is to improve their event scheduling system. It contains a modern calendar, as well as a list view that provides the members with a better user-experience.
 
 ## Table of Contents
 - Tech Stack
